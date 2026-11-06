@@ -85,7 +85,7 @@ col3.metric("🔗 Effort Traction 3ème Point", f"{F_3eme_norme/1000:.1f} kN")
 fig = go.Figure()
 
 # Le bloc de sol s'étend désormais de Z = 0 (Nouveau niveau du sol) jusqu'à Z = -0.15m (bas du graphique)
-fig.add_trace(go.Scatter(x=[-4.1, 4.1, 4.1, -4.1, -4.1], y=[0.0, 0.0, -1, -1, 0.0], mode='lines', fill='toself', fillcolor='rgba(139, 69, 19, 0.25)', line=dict(color='rgba(0,0,0,0)'), showlegend=False))
+fig.add_trace(go.Scatter(x=[-4.1, 4.1, 4.1, -4.1, -4.1], y=[0.0, 0.0, -1, -0.8, 0.0], mode='lines', fill='toself', fillcolor='rgba(139, 69, 19, 0.25)', line=dict(color='rgba(0,0,0,0)'), showlegend=False))
 fig.add_trace(go.Scatter(x=[-4.2, 4.2], y=[0.0, 0.0], mode='lines', line=dict(color='gray', width=2), showlegend=False))
 
 # Décalage des centres des roues en Z (+shift_sol_Z)
